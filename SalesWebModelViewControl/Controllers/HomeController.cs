@@ -18,6 +18,7 @@ namespace SalesWebModelViewControl.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+            ViewData["Email"] = "wagner.worst@gmail.com";
 
             return View();
         }
@@ -25,7 +26,7 @@ namespace SalesWebModelViewControl.Controllers
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
-
+            
             return View();
         }
 

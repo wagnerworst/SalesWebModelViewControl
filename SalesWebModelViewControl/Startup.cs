@@ -39,6 +39,7 @@ namespace SalesWebModelViewControl
             services.AddDbContext<SalesWebModelViewControlContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("SalesWebModelViewControlContext"), builder =>
                         builder.MigrationsAssembly("SalesWebModelViewControl")));
+            services.AddScoped<SeedingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
